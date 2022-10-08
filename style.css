@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root {
+  --Whitee: hsl(0, 0%, 100%);
+  --Very_light_grayish_blue: hsl(210, 60%, 98%);
+  --Light_grayish_blue1: hsl(211, 68%, 94%);
+  --Light_grayish_blue2: hsl(205, 33%, 90%);
+  --Grayish_blue: hsl(219, 14%, 63%);
+  --Dark_grayish_blue: hsl(219, 12%, 42%);
+  --Very_dark_blue: hsl(224, 21%, 14%);
+  --blue: hsl(219, 85%, 26%);
+}
+@font-face {
+  font-family: Font;
+  src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf')  format('truetype');
+}
+body {
+  background: var(--Very_light_grayish_blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:Font;
+}
+
+.container {
+  width: 750px;
+  height: 750px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: var(--Whitee);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+header h1 span{
+  background-color: var(--blue);
+  color: var(--Whitee);
+  padding: 7px 15px;
+  border-radius: 13px;
+  font-size: 25px;
+}
+header h3:hover{
+  color: var(--blue);
+  cursor: pointer;
+}
+.notification{
+  display: flex;
+  margin: 10px 30px;
+ border-radius: 5px;
+}
+.online{
+  background: var(--Very_light_grayish_blue);
+}
+.notification img{
+  height: 40px;
+  margin: 10px 20px;
+}
+.notification p{
+  margin: 10px;
+  font-size: 16px;
+}
+.notification p .name{
+  font-weight: 800;
+}
+.notification p .name:hover{
+  color: var(--blue);
+  cursor: pointer;
+}
+.notification p .discription{
+  color: var(--Grayish_blue);
+}
+.notification p .dis2{
+  color: var(--Dark_grayish_blue);
+  font-weight: 500;
+  margin-top: 20px;
+}
+.notification p .dis2:hover{
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: 800;
+}
+.notification p .online{
+  border: solid;
+  border-radius: 100%;
+  color: hsl(1, 90%, 64%);
+  font-size: 2px;
+  margin:0 5px;
+  display: inline-block;
+}
+.notification .time{
+  color: var(--Dark_grayish_blue);
+}
+.notification .message{
+   border: solid var(--Light_grayish_blue1);
+   height: 100px;
+}
+.notification .message:hover{
+  background-color: var(--Light_grayish_blue1);
+  cursor: pointer;
+}
+.notification .message p{
+  margin: 20px;
+}
+.notification .img1{
+   margin-left: 200px;
+}
+.notification .img1:hover{
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+
+  .container{
+    margin-top: 20px;
+    width: 375px;
+    font-size: 10px;
+  }
+  .notification p{
+    font-size: 12px;
+  }
+  .notification .message p{
+  margin: 2px;
+}
+.notification .message{
+  height: 60px;
+}
+.notification .img1{
+  margin-left: 10px;
+}
+}
